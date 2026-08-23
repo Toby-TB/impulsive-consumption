@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#FF6B9D"/><stop offset="0.5" stop-color="#FF8A50"/><stop offset="1" stop-color="#FFC53D"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="400" fill="url(#bg)"/>
+<circle cx="70" cy="58" r="44" fill="#FFFFFF" opacity="0.13"/>
+<circle cx="1146" cy="88" r="68" fill="#FFFFFF" opacity="0.11"/>
+<circle cx="1088" cy="336" r="32" fill="#FFFFFF" opacity="0.17"/>
+<circle cx="196" cy="356" r="16" fill="#FFFFFF" opacity="0.22"/>
+<circle cx="620" cy="332" r="14" fill="#FFFFFF" opacity="0.25"/>
+<circle cx="962" cy="344" r="10" fill="#FFFFFF" opacity="0.3"/>
+<path d="M840 70 l8 16 16 0 -12 10 4 16 -16 -9 -16 9 4 -16 -12 -10 16 0 Z" fill="#FFFFFF" opacity="0.4"/>
+<g transform="translate(96,72) scale(1.12)">
+<path d="M64 40 Q64 0 128 0 Q192 0 192 40 L208 40 L196 190 L60 190 L48 40 Z" fill="#FFFFFF"/>
+<path d="M84 40 Q86 26 128 26 Q170 26 172 40" fill="none" stroke="#FFC8B2" stroke-width="9" stroke-linecap="round"/>
+<path d="M128 52 L102 118 L116 118 L128 90 L140 118 L154 118 Z" fill="#FF5A2E"/>
+<path d="M154 94 L166 76 L168 92 L180 94 L168 99 L170 111 L157 104 L151 116 Z" fill="#FFC8B2"/>
+</g>
+<text x="398" y="168" font-family="DejaVu Sans" font-weight="bold" font-size="48" fill="#FFFFFF">IMPULSIVE CONSUMPTION</text>
+<text x="398" y="220" font-family="DejaVu Sans" font-size="30" fill="#FFFFFF" opacity="0.95">Buy today, regret tomorrow</text>
+<text x="398" y="260" font-family="DejaVu Sans" font-size="21" fill="#FFFFFF" opacity="0.8">Fully offline shopping simulator · Flutter · Local SQLite</text>
+</svg>
