@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E0F7FA"/><stop offset="1" stop-color="#B2EBF2"/></linearGradient></defs>
+<rect width="600" height="600" fill="url(#bg)"/>
+<ellipse cx="300" cy="505" rx="150" ry="22" fill="#000" opacity="0.10"/>
+<rect x="168" y="212" width="264" height="66" rx="30" fill="#FF8A80" transform="rotate(-10 300 246)"/>
+<rect x="180" y="250" width="240" height="190" rx="40" fill="#FF6B6B"/>
+<rect x="232" y="330" width="30" height="90" rx="15" fill="#FFFFFF"/>
+<rect x="338" y="330" width="30" height="90" rx="15" fill="#FFFFFF"/>
+<circle cx="247" cy="304" r="30" fill="#FFFFFF"/>
+<circle cx="247" cy="304" r="13" fill="#FF8A80"/>
+<circle cx="353" cy="304" r="30" fill="#FFFFFF"/>
+<circle cx="353" cy="304" r="13" fill="#FF8A80"/>
+<rect x="180" y="366" width="240" height="74" rx="32" fill="#E55353"/>
+<circle cx="240" cy="312" r="5" fill="#FFFFFF" opacity="0.7"/>
+<circle cx="300" cy="404" r="5" fill="#FFFFFF" opacity="0.5"/>
+</svg>

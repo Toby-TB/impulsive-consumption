@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E0F2F1"/><stop offset="1" stop-color="#B2DFDB"/></linearGradient></defs>
+<rect width="600" height="600" fill="url(#bg)"/>
+<ellipse cx="300" cy="505" rx="160" ry="22" fill="#000" opacity="0.10"/>
+<ellipse cx="280" cy="330" rx="140" ry="100" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="6"/>
+<circle cx="280" cy="330" r="30" fill="#B2DFDB"/>
+<circle cx="230" cy="290" r="18" fill="#FF5252"/>
+<circle cx="272" cy="270" r="18" fill="#FFB300"/>
+<circle cx="318" cy="282" r="18" fill="#4FC3F7"/>
+<circle cx="332" cy="330" r="18" fill="#66BB6A"/>
+<circle cx="300" cy="368" r="18" fill="#AB47BC"/>
+<circle cx="252" cy="352" r="18" fill="#FF8A65"/>
+<path d="M180 400 L330 400 L342 420 L168 420 Z" fill="#A1887F" transform="rotate(24 255 410)"/>
+<path d="M200 396 L330 396" stroke="#8D6E63" stroke-width="8"/>
+<path d="M168 412 L340 412 Q344 426 330 436 Q310 448 296 434 Q282 420 284 410" fill="#FF7043"/>
+<path d="M284 412 Q286 400 296 396" stroke="#8D6E63" stroke-width="8" fill="none"/>
+<circle cx="420" cy="200" r="9" fill="#4FC3F7" opacity="0.8"/>
+<circle cx="450" cy="250" r="7" fill="#FF8A65" opacity="0.8"/>
+</svg>

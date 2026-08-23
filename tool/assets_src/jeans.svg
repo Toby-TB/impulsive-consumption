@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8EAF6"/><stop offset="1" stop-color="#C5CAE9"/></linearGradient></defs>
+<rect width="600" height="600" fill="url(#bg)"/>
+<ellipse cx="300" cy="505" rx="150" ry="22" fill="#000" opacity="0.10"/>
+<path d="M215 120 L385 120 L395 160 L395 470 L330 470 L300 320 L270 470 L205 470 L205 160 Z" fill="#3F51B5"/>
+<path d="M215 120 L385 120 L395 160 L395 470 L330 470 L300 320 L270 470 L205 470 L205 160 Z" fill="none" stroke="#303F9F" stroke-width="6" stroke-linejoin="round"/>
+<rect x="205" y="108" width="190" height="30" rx="10" fill="#303F9F"/>
+<path d="M225 250 Q300 275 375 250" stroke="#C5CAE9" stroke-width="6" fill="none" stroke-dasharray="10 8"/>
+<path d="M225 300 Q300 325 375 300" stroke="#C5CAE9" stroke-width="6" fill="none" stroke-dasharray="10 8"/>
+<path d="M228 160 L262 160 L258 200 L232 200 Z" fill="#303F9F" opacity="0.8"/>
+<path d="M338 160 L372 160 L368 200 L342 200 Z" fill="#303F9F" opacity="0.8"/>
+<circle cx="300" cy="300" r="9" fill="#FFC107"/>
+<path d="M240 470 L240 484 M360 470 L360 484" stroke="#303F9F" stroke-width="8" stroke-linecap="round"/>
+</svg>
