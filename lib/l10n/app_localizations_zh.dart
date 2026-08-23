@@ -463,10 +463,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get perItem => '件';
 
   @override
-  String get heroTitle => '買 一切 · 不心疼';
+  String get heroTitle => '想买就买 · 开心就好';
 
   @override
-  String get heroSubtitle => '虛擬餘額 ¥10,000 開局 · 今天不買明天後悔';
+  String get heroSubtitle => '模拟购物 · 虚拟钱包 · ¥10,000 开局畅玩全场';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -927,8 +927,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get perItem => '件';
 
   @override
-  String get heroTitle => '買 一切 · 不心疼';
+  String get heroTitle => '想買就買 · 開心就好';
 
   @override
-  String get heroSubtitle => '虛擬餘額 ¥10,000 開局 · 今天不買明天後悔';
+  String get heroSubtitle => '模擬購物 · 虛擬錢包 · ¥10,000 開局暢玩全場';
 }

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/logistics.dart';
+import '../../core/widgets/page_width.dart';
 import '../../core/money.dart';
 import '../../data/catalog/products.dart';
 import '../../l10n/app_localizations.dart';
@@ -57,8 +58,10 @@ class _OrderDetailPageState extends ConsumerState<OrderDetailPage> {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.orderDetailTitle)),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
         children: [
           Card(
             margin: EdgeInsets.zero,
@@ -221,6 +224,7 @@ class _OrderDetailPageState extends ConsumerState<OrderDetailPage> {
             child: Text(l10n.buyAgain),
           ),
         ],
+      ),
       ),
     );
   }

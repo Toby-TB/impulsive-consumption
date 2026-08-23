@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../data/catalog/products.dart';
 import '../../data/db/database.dart';
 import '../../l10n/app_localizations.dart';
@@ -40,7 +41,11 @@ class CartPage extends ConsumerWidget {
             ),
         ],
       ),
-      body: cart.isEmpty
+      body: PageWidth(
+
+        maxWidth: 900,
+
+        child: cart.isEmpty
           ? Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -81,6 +86,7 @@ class CartPage extends ConsumerWidget {
                 ),
               ],
             ),
+      ),
     );
   }
 

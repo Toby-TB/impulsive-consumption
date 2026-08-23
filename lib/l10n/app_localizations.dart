@@ -948,13 +948,13 @@ abstract class AppLocalizations {
   /// No description provided for @heroTitle.
   ///
   /// In zh, this message translates to:
-  /// **'買 一切 · 不心疼'**
+  /// **'想买就买 · 开心就好'**
   String get heroTitle;
 
   /// No description provided for @heroSubtitle.
   ///
   /// In zh, this message translates to:
-  /// **'虛擬餘額 ¥10,000 開局 · 今天不買明天後悔'**
+  /// **'模拟购物 · 虚拟钱包 · ¥10,000 开局畅玩全场'**
   String get heroSubtitle;
 }
 

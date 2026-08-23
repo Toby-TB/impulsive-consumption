@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/widgets/page_width.dart';
 import '../../data/catalog/products.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
@@ -33,86 +34,94 @@ class _ShopPageState extends ConsumerState<ShopPage> {
       return inCategory && matchesQuery;
     }).toList();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(l10n.appName),
-            Text(l10n.appTagline,
-                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w400, color: Color(0xFFE8590C))),
-          ],
-        ),
-      ),
-      body: Column(
-        children: [
-          const _HeroBanner(),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
-            child: TextField(
-              onChanged: (v) => setState(() => _query = v),
-              decoration: InputDecoration(
-                hintText: l10n.searchHint,
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: _query.isEmpty
-                    ? null
-                    : IconButton(icon: const Icon(Icons.close), onPressed: () => setState(() => _query = '')),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 46,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+    return LayoutBuilder(
+      builder: (context, viewport) {
+        final titleSpacing = 16 + (viewport.maxWidth - 960).clamp(0.0, double.infinity) / 2;
+        return Scaffold(
+          appBar: AppBar(
+            titleSpacing: titleSpacing,
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _chip(l10n.all, _categoryId == 'all', () => setState(() => _categoryId = 'all')),
-                for (final c in categories)
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8),
-                    child: _chip(
-                      '${c.emoji} ${c.name.resolve(localeCode)}',
-                      _categoryId == c.id,
-                      () => setState(() => _categoryId = c.id),
-                    ),
-                  ),
+                Text(l10n.appName),
+                Text(l10n.appTagline,
+                    style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w400, color: Color(0xFFE8590C))),
               ],
             ),
           ),
-          Expanded(
-            child: filtered.isEmpty
-                ? Center(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('🔍', style: TextStyle(fontSize: 56)),
-                        const SizedBox(height: 12),
-                        Text(l10n.searchEmpty, style: const TextStyle(color: Colors.grey)),
-                      ],
+      body: PageWidth(
+        child: Column(
+          children: [
+            const _HeroBanner(),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
+              child: TextField(
+                onChanged: (v) => setState(() => _query = v),
+                decoration: InputDecoration(
+                  hintText: l10n.searchHint,
+                  prefixIcon: const Icon(Icons.search),
+                  suffixIcon: _query.isEmpty
+                      ? null
+                      : IconButton(icon: const Icon(Icons.close), onPressed: () => setState(() => _query = '')),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 46,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                children: [
+                  _chip(l10n.all, _categoryId == 'all', () => setState(() => _categoryId = 'all')),
+                  for (final c in categories)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: _chip(
+                        c.name.resolve(localeCode),
+                        _categoryId == c.id,
+                        () => setState(() => _categoryId = c.id),
+                      ),
                     ),
-                  )
-                : GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      childAspectRatio: 0.62,
+                ],
+              ),
+            ),
+            Expanded(
+              child: filtered.isEmpty
+                  ? Center(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text('🔍', style: TextStyle(fontSize: 56)),
+                          const SizedBox(height: 12),
+                          Text(l10n.searchEmpty, style: const TextStyle(color: Colors.grey)),
+                        ],
+                      ),
+                    )
+                  : GridView.builder(
+                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
+                      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                        maxCrossAxisExtent: 230,
+                        mainAxisSpacing: 12,
+                        crossAxisSpacing: 12,
+                        childAspectRatio: 0.62,
+                      ),
+                      itemCount: filtered.length,
+                      itemBuilder: (context, i) {
+                        final p = filtered[i];
+                        return ProductCard(
+                          product: p,
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => ProductDetailPage(productId: p.id)),
+                          ),
+                        );
+                      },
                     ),
-                    itemCount: filtered.length,
-                    itemBuilder: (context, i) {
-                      final p = filtered[i];
-                      return ProductCard(
-                        product: p,
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => ProductDetailPage(productId: p.id)),
-                        ),
-                      );
-                    },
-                  ),
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
+        );
+      },
     );
   }
 
@@ -126,7 +135,7 @@ class _ShopPageState extends ConsumerState<ShopPage> {
   }
 }
 
-/// 首页多巴胺横幅：暗色渐变 + 大标语 + 悬浮商品图（参考 dopamine 购物站风格）。
+/// 首页横幅：品牌橙粉渐变 + 大标语 + 悬浮商品图（轻游戏化风格）。
 class _HeroBanner extends StatefulWidget {
   const _HeroBanner();
 
@@ -160,7 +169,7 @@ class _HeroBannerState extends State<_HeroBanner> with SingleTickerProviderState
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF2A1B3D), Color(0xFF6B2D5C), Color(0xFFC2410C)],
+          colors: [Color(0xFFFF8A50), Color(0xFFF4511E), Color(0xFFE91E63)],
         ),
         borderRadius: BorderRadius.circular(22),
       ),
@@ -220,7 +229,7 @@ class _HeroBannerState extends State<_HeroBanner> with SingleTickerProviderState
                         border: Border.all(color: const Color(0x55FFFFFF)),
                       ),
                       child: Text(
-                        '💊 ${l10n.appName}',
+                        '🛒 ${l10n.appName}',
                         style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700),
                       ),
                     ),

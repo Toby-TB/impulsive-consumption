@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/coupon_logic.dart';
+import '../../core/widgets/page_width.dart';
 import '../../core/money.dart';
 import '../../data/catalog/products.dart';
 import '../../data/db/database.dart';
@@ -78,8 +79,10 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.checkoutTitle)),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
         children: [
           Card(
             margin: EdgeInsets.zero,
@@ -137,6 +140,7 @@ class _CheckoutPageState extends ConsumerState<CheckoutPage> {
             child: Text('🚚 ${l10n.freeShipping}', style: const TextStyle(fontSize: 12, color: Colors.grey)),
           ),
         ],
+      ),
       ),
       bottomNavigationBar: SafeArea(
         child: Padding(

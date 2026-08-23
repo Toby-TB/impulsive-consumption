@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
 
@@ -30,8 +31,10 @@ class _RechargePageState extends ConsumerState<RechargePage> {
     final currency = ref.watch(currencyProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.rechargeTitle)),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
+      body: PageWidth(
+        maxWidth: 720,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -77,6 +80,7 @@ class _RechargePageState extends ConsumerState<RechargePage> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

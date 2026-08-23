@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/achievements.dart';
+import '../../core/widgets/page_width.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
 import '../shared/snack.dart';
@@ -18,8 +19,10 @@ class AchievementsPage extends ConsumerWidget {
     final unlockedAt = {for (final a in unlocked) a.key: a.unlockedAt};
     return Scaffold(
       appBar: AppBar(title: Text(l10n.achievementsTitle)),
-      body: ListView.builder(
-        padding: const EdgeInsets.all(12),
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView.builder(
+          padding: const EdgeInsets.all(12),
         itemCount: achievementDefs.length,
         itemBuilder: (context, i) {
           final def = achievementDefs[i];
@@ -81,6 +84,7 @@ class AchievementsPage extends ConsumerWidget {
             ),
           );
         },
+      ),
       ),
     );
   }

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../data/db/database.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
@@ -22,8 +23,10 @@ class WalletPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.walletTitle)),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
         children: [
           Container(
             padding: const EdgeInsets.all(20),
@@ -85,6 +88,7 @@ class WalletPage extends ConsumerWidget {
           else
             for (final txn in txns) _TxnTile(txn: txn, currency: currency),
         ],
+      ),
       ),
     );
   }

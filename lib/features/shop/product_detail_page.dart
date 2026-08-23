@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../data/catalog/products.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
@@ -49,8 +50,10 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
           ),
         ],
       ),
-      body: ListView(
-        children: [
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView(
+          children: [
           AspectRatio(
             aspectRatio: 1,
             child: Hero(
@@ -129,6 +132,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
             ),
           ),
         ],
+      ),
       ),
       bottomNavigationBar: SafeArea(
         child: Padding(

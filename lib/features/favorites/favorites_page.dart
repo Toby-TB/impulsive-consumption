@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../data/catalog/products.dart';
+import '../../core/widgets/page_width.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
 import '../shop/product_card.dart';
@@ -17,8 +18,10 @@ class FavoritesPage extends ConsumerWidget {
     final favorited = products.where((p) => favs.contains(p.id)).toList();
     return Scaffold(
       appBar: AppBar(title: Text(l10n.favoritesTitle)),
-      body: favorited.isEmpty
-          ? Center(
+      body: PageWidth(
+        maxWidth: 900,
+        child: favorited.isEmpty
+            ? Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -30,8 +33,8 @@ class FavoritesPage extends ConsumerWidget {
             )
           : GridView.builder(
               padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 230,
                 mainAxisSpacing: 12,
                 crossAxisSpacing: 12,
                 childAspectRatio: 0.62,
@@ -47,6 +50,7 @@ class FavoritesPage extends ConsumerWidget {
                 );
               },
             ),
+      ),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/achievements.dart';
+import '../../core/widgets/page_width.dart';
 import '../../core/money.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
@@ -28,8 +29,10 @@ class ProfilePage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.tabProfile)),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
+      body: PageWidth(
+        maxWidth: 720,
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 16),
         children: [
           Card(
             margin: EdgeInsets.zero,
@@ -84,6 +87,7 @@ class ProfilePage extends ConsumerWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }

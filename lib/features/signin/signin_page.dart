@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../data/catalog/products.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
@@ -19,8 +20,10 @@ class SigninPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.signinTitle)),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
+      body: PageWidth(
+        maxWidth: 720,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -101,6 +104,7 @@ class SigninPage extends ConsumerWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

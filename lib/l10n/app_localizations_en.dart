@@ -468,9 +468,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get perItem => 'pcs';
 
   @override
-  String get heroTitle => 'BUY IT ALL. ZERO REGRETS.';
+  String get heroTitle => 'BUY ON IMPULSE. HAVE FUN.';
 
   @override
   String get heroSubtitle =>
-      'Start with ¥10,000 virtual credit · Buy today, regret tomorrow';
+      'Simulated shopping · Virtual wallet · Start with ¥10,000';
 }

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/logistics.dart';
 import '../../core/money.dart';
+import '../../core/widgets/page_width.dart';
 import '../../l10n/app_localizations.dart';
 import '../../state/providers.dart';
 import 'order_detail_page.dart';
@@ -39,7 +40,9 @@ class _OrdersPageState extends ConsumerState<OrdersPage> {
     final bundles = ref.watch(ordersProvider).valueOrNull ?? const <OrderBundle>[];
     return Scaffold(
       appBar: AppBar(title: Text(l10n.tabOrders)),
-      body: bundles.isEmpty
+      body: PageWidth(
+        maxWidth: 900,
+        child: bundles.isEmpty
           ? Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -55,6 +58,7 @@ class _OrdersPageState extends ConsumerState<OrdersPage> {
               itemCount: bundles.length,
               itemBuilder: (context, i) => _OrderCard(bundle: bundles[i]),
             ),
+      ),
     );
   }
 }
