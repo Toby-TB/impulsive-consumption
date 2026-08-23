@@ -81,7 +81,12 @@ flowchart LR
   DB --> L["📱 On-device storage<br/>Windows / macOS / Android / iOS / Web"]
 ```
 
-## 🚀 Quick Start
+## 📥 Download & Install (no dev environment needed)
+
+- 📱 **Android**: grab the latest `app-release.apk` from the [Releases page](https://github.com/Toby-TB/impulsive-consumption/releases), copy it to your phone and install (allow "unknown sources")
+- 🌐 **Web/PC**: just open https://toby-tb.github.io/impulsive-consumption/ (no install needed)
+
+## 🚀 Quick Start (developers)
 
 | Platform | Command | Output |
 |---|---|---|

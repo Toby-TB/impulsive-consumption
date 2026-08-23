@@ -81,7 +81,12 @@ flowchart LR
   DB --> L["📱 裝置本地儲存<br/>Windows / macOS / Android / iOS / Web"]
 ```
 
-## 🚀 快速開始
+## 📥 下載安裝（無需開發環境）
+
+- 📱 **Android**：到 [Releases 頁面](https://github.com/Toby-TB/impulsive-consumption/releases) 下載最新 `app-release.apk`，傳到手機安裝（需允許"未知來源應用"）
+- 🌐 **Web/PC**：直接開啟 https://toby-tb.github.io/impulsive-consumption/ （無需安裝）
+
+## 🚀 快速開始（開發者）
 
 | 平台 | 命令 | 產物 |
 |---|---|---|
