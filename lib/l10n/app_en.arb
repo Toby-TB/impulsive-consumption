@@ -13,11 +13,29 @@
   "searchEmpty": "No products found",
   "outOfStock": "Sold out",
   "stockLeft": "Stock: {count}",
-  "@stockLeft": {"placeholders": {"count": {"type": "int"}}},
+  "@stockLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "monthlySales": "{count} sold/mo",
-  "@monthlySales": {"placeholders": {"count": {"type": "int"}}},
+  "@monthlySales": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "ratingStar": "{rating} ★",
-  "@ratingStar": {"placeholders": {"rating": {"type": "double"}}},
+  "@ratingStar": {
+    "placeholders": {
+      "rating": {
+        "type": "double"
+      }
+    }
+  },
   "quantity": "Quantity",
   "addToCart": "Add to Cart",
   "buyNow": "Buy Now",
@@ -31,23 +49,53 @@
   "selectAll": "Select all",
   "totalLabel": "Total",
   "checkoutN": "Checkout ({count})",
-  "@checkoutN": {"placeholders": {"count": {"type": "int"}}},
+  "@checkoutN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "clearCart": "Clear",
   "clearCartConfirm": "Clear the whole cart?",
   "cartEmpty": "Your cart is empty — go shopping!",
   "goShopping": "Go shopping",
   "itemsCount": "{count} item(s)",
-  "@itemsCount": {"placeholders": {"count": {"type": "int"}}},
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "checkoutTitle": "Checkout",
   "orderItems": "Items",
   "couponLabel": "Coupon",
   "couponNone": "No coupon",
   "couponBelowThreshold": "Valid over {amount}",
-  "@couponBelowThreshold": {"placeholders": {"amount": {"type": "String"}}},
+  "@couponBelowThreshold": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "couponDiscountFixed": "−{amount}",
-  "@couponDiscountFixed": {"placeholders": {"amount": {"type": "String"}}},
+  "@couponDiscountFixed": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "couponDiscountPercent": "Pay {percent}0%",
-  "@couponDiscountPercent": {"placeholders": {"percent": {"type": "String"}}},
+  "@couponDiscountPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
   "priceBreakdown": "Summary",
   "subtotalLabel": "Subtotal",
   "discountLabel": "Discount",
@@ -55,12 +103,30 @@
   "payNow": "Pay Now",
   "insufficientTitle": "Insufficient balance",
   "insufficientMsg": "You're {amount} short. Recharge now?",
-  "@insufficientMsg": {"placeholders": {"amount": {"type": "String"}}},
+  "@insufficientMsg": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "goRecharge": "Recharge",
   "paySurpriseDiscount": "Lucky −{amount}",
-  "@paySurpriseDiscount": {"placeholders": {"amount": {"type": "String"}}},
+  "@paySurpriseDiscount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "paySurpriseRebate": "Lucky +{amount} rebate",
-  "@paySurpriseRebate": {"placeholders": {"amount": {"type": "String"}}},
+  "@paySurpriseRebate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "surpriseBanner": "🎉 Lucky Egg",
   "selectItemsFirst": "Select items to check out first",
   "paymentSuccess": "Payment Successful",
@@ -99,19 +165,43 @@
   "signinNow": "Sign in now",
   "signedToday": "Signed in today",
   "streakDays": "{count}-day streak",
-  "@streakDays": {"placeholders": {"count": {"type": "int"}}},
+  "@streakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "signinReward": "Earned {amount}",
-  "@signinReward": {"placeholders": {"amount": {"type": "String"}}},
+  "@signinReward": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "signinHint": "Streak rewards grow over a 7-day cycle — a missed day restarts it",
   "dayN": "Day {count}",
-  "@dayN": {"placeholders": {"count": {"type": "int"}}},
+  "@dayN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "favoritesTitle": "Favorites",
   "emptyFavorites": "No favorites yet",
   "addedToFavorites": "Added to favorites",
   "removedFromFavorites": "Removed from favorites",
   "achievementsTitle": "Achievements",
   "achievementUnlocked": "Achievement unlocked: {name}",
-  "@achievementUnlocked": {"placeholders": {"name": {"type": "String"}}},
+  "@achievementUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "achFirstOrder": "First Order!",
   "achFirstOrderDesc": "Complete your first order",
   "achShopaholic": "Shopaholic",
@@ -155,5 +245,7 @@
   "profileSubtitle": "Welcome to Impulsive Consumption — enjoy the joy of shopping",
   "dbInitFailed": "Failed to initialize local data",
   "freeShipping": "Free shipping (simulated)",
-  "perItem": "pcs"
+  "perItem": "pcs",
+  "heroTitle": "BUY IT ALL. ZERO REGRETS.",
+  "heroSubtitle": "Start with ¥10,000 virtual credit · Buy today, regret tomorrow"
 }

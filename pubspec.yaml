@@ -33,6 +33,7 @@ flutter:
   generate: true
   assets:
     - assets/images/products/
+    - assets/images/hero/
 
 flutter_launcher_icons:
   android: true

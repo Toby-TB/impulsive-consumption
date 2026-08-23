@@ -46,6 +46,7 @@ class _ShopPageState extends ConsumerState<ShopPage> {
       ),
       body: Column(
         children: [
+          const _HeroBanner(),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
             child: TextField(
@@ -121,6 +122,138 @@ class _ShopPageState extends ConsumerState<ShopPage> {
       selected: selected,
       onSelected: (_) => onTap(),
       showCheckmark: false,
+    );
+  }
+}
+
+/// 首页多巴胺横幅：暗色渐变 + 大标语 + 悬浮商品图（参考 dopamine 购物站风格）。
+class _HeroBanner extends StatefulWidget {
+  const _HeroBanner();
+
+  @override
+  State<_HeroBanner> createState() => _HeroBannerState();
+}
+
+class _HeroBannerState extends State<_HeroBanner> with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 3))..repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return Container(
+      height: 148,
+      margin: const EdgeInsets.fromLTRB(12, 4, 12, 10),
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFF2A1B3D), Color(0xFF6B2D5C), Color(0xFFC2410C)],
+        ),
+        borderRadius: BorderRadius.circular(22),
+      ),
+      child: Stack(
+        children: [
+          Positioned(
+            top: -34,
+            left: -20,
+            child: Container(
+              width: 120,
+              height: 120,
+              decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0x22FFFFFF)),
+            ),
+          ),
+          Positioned(
+            bottom: -46,
+            right: 90,
+            child: Container(
+              width: 140,
+              height: 140,
+              decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0x1AFFFFFF)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(18, 22, 148, 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.heroTitle,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 0.5,
+                    height: 1.15,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  l10n.heroSubtitle,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(color: Colors.white70, fontSize: 12.5, fontWeight: FontWeight.w600),
+                ),
+                const Spacer(),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: const Color(0x33FFFFFF),
+                        borderRadius: BorderRadius.circular(999),
+                        border: Border.all(color: const Color(0x55FFFFFF)),
+                      ),
+                      child: Text(
+                        '💊 ${l10n.appName}',
+                        style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            right: 2,
+            bottom: -4,
+            child: AnimatedBuilder(
+              animation: _controller,
+              builder: (context, child) {
+                final t = _controller.value;
+                return Transform.translate(
+                  offset: Offset(0, -6 * t),
+                  child: Transform.rotate(
+                    angle: 0.035 * t - 0.018,
+                    child: child,
+                  ),
+                );
+              },
+              child: Image.asset(
+                'assets/images/hero/ps5.png',
+                width: 152,
+                height: 152,
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

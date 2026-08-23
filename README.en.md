@@ -28,7 +28,7 @@ Experience the full shopping spree — browse → cart → coupons → checkout 
 
 | 🎮 Module | 🎯 What you get |
 |---|---|
-| 🏪 **Product system** | 28 hand-drawn illustrated products · 6 categories · search · detail page · simulated monthly sales / rating / stock · **daily auto restock** |
+| 🏪 **Product system** | 28 real products · 6 categories · search · detail page · simulated monthly sales / rating / stock · **daily auto restock** |
 | 👛 **Local wallet** | Initial balance ¥10,000 · simulated top-up · balance check & deduction · full transaction history |
 | 🛒 **Cart** | Partial checkout with checkboxes · real-time total · quantity capped by stock · clear all |
 | 💳 **Checkout & payment** | 4 coupons (fixed-off / percent-off) · insufficient-balance flow to recharge · **~30% chance of a lucky egg** (surprise discount / rebate) · confetti + check-mark animation · atomic order transaction |
@@ -49,31 +49,23 @@ Experience the full shopping spree — browse → cart → coupons → checkout 
   <img src="docs/images/products.png" alt="Product gallery" width="600"/>
 </p>
 
-## 🖼️ Product Gallery (28 hand-drawn items)
+## 🖼️ Product Gallery (28 real items)
 
-### 📱 Digital
-| <img src="assets/images/products/phone.png" width="105"><br><sub>Starlight X1 Phone · ¥7999</sub> | <img src="assets/images/products/buds.png" width="105"><br><sub>Silence Pro ANC Buds · ¥1299</sub> | <img src="assets/images/products/watch.png" width="105"><br><sub>Flow S Smart Watch · ¥1899</sub> | <img src="assets/images/products/laptop.png" width="105"><br><sub>Swift Air Ultrabook · ¥6599</sub> | <img src="assets/images/products/camera.png" width="105"><br><sub>Frame M2 Mirrorless · ¥4599</sub> | <img src="assets/images/products/tablet.png" width="105"><br><sub>Nova Tablet · ¥2499</sub> | <img src="assets/images/products/sunglasses.png" width="105"><br><sub>Summer Glare Shades · ¥199</sub> |
+### 🖥️ Graphics Cards
+| <img src="assets/images/products/nvidia-rtx-4090.png" width="105"><br><sub>NVIDIA GeForce RTX 4090 24GB · ¥12,999</sub> | <img src="assets/images/products/gigabyte-rtx-5090.png" width="105"><br><sub>Gigabyte GeForce RTX 5090 Windforce OC 32GB · ¥16,499</sub> | <img src="assets/images/products/asus-rog-strix-4090.png" width="105"><br><sub>ASUS ROG Strix GeForce RTX 4090 24GB · ¥13,499</sub> | <img src="assets/images/products/zotac-rtx-5090.png" width="105"><br><sub>Zotac GeForce RTX 5090 Solid OC 32GB · ¥15,999</sub> | <img src="assets/images/products/msi-gaming-trio-4090.png" width="105"><br><sub>MSI GeForce RTX 4090 Gaming Trio 24GB · ¥12,899</sub> | <img src="assets/images/products/gigabyte-5090-aorus.png" width="105"><br><sub>Gigabyte RTX 5090 Aorus Master 32GB · ¥17,999</sub> | <img src="assets/images/products/inno3d-rtx-5090.png" width="105"><br><sub>Inno3D GeForce RTX 5090 X3 32GB · ¥14,899</sub> |
 |---|---|---|---|---|---|---|
 
-### 👕 Fashion
-| <img src="assets/images/products/sneakers.png" width="105"><br><sub>Cloud Runner Sneakers · ¥599</sub> | <img src="assets/images/products/tee.png" width="105"><br><sub>Cotton Print Tee · ¥129</sub> | <img src="assets/images/products/coat.png" width="105"><br><sub>Warm Wool Coat · ¥899</sub> | <img src="assets/images/products/cap.png" width="105"><br><sub>Street Baseball Cap · ¥89</sub> | <img src="assets/images/products/jeans.png" width="105"><br><sub>Retro Straight Jeans · ¥299</sub> |
-|---|---|---|---|---|
+### 🎮 Gaming Gear
+| <img src="assets/images/products/ps5-slim.png" width="105"><br><sub>PlayStation 5 Slim Digital Edition · ¥2,999</sub> | <img src="assets/images/products/stern-pinball.png" width="105"><br><sub>Stern Metallica Pro Pinball Machine · ¥49,999</sub> | <img src="assets/images/products/airhockey-kids.png" width="105"><br><sub>Air Kids Air Hockey Table · ¥8,999</sub> | <img src="assets/images/products/airhockey-pro.png" width="105"><br><sub>Pro Coin-Operated Air Hockey Table · ¥13,999</sub> | <img src="assets/images/products/fanatec-gt-extreme.png" width="105"><br><sub>Fanatec Gran Turismo DD Extreme Kit · ¥11,999</sub> | <img src="assets/images/products/fanatec-f1-kit.png" width="105"><br><sub>Fanatec ClubSport Racing Wheel F1 Kit · ¥10,999</sub> | <img src="assets/images/products/simagic-alpha-pro.png" width="105"><br><sub>Simagic Alpha Pro Wheelbase Combo · ¥9,899</sub> | <img src="assets/images/products/darth-vader-statue.png" width="105"><br><sub>Darth Vader Mythos 1/4 Statue · ¥10,499</sub> | <img src="assets/images/products/fanatec-dd-plus.png" width="105"><br><sub>Fanatec ClubSport DD+ Base Kit · ¥9,499</sub> |
+|---|---|---|---|---|---|---|---|---|
 
-### 🍰 Food
-| <img src="assets/images/products/chocolate.png" width="105"><br><sub>Velvet Chocolate Box · ¥99</sub> | <img src="assets/images/products/coffee.png" width="105"><br><sub>Pour-over Coffee Beans · ¥128</sub> | <img src="assets/images/products/fruit.png" width="105"><br><sub>Sunshine Fruit Basket · ¥168</sub> | <img src="assets/images/products/ramen.png" width="105"><br><sub>Midnight Ramen Kit · ¥59</sub> | <img src="assets/images/products/tea.png" width="105"><br><sub>Alpine Oolong Tea · ¥218</sub> |
-|---|---|---|---|---|
+### 💻 Gaming PCs
+| <img src="assets/images/products/pulse-bluepc.png" width="105"><br><sub>Pulse BluePC Gaming PC (i9-14900KF) · ¥13,999</sub> | <img src="assets/images/products/aura-workstation.png" width="105"><br><sub>AURA by BluePC Workstation · ¥17,499</sub> |
+|---|---|
 
-### 🛋️ Home
-| <img src="assets/images/products/sofa.png" width="105"><br><sub>Cloud Modular Sofa · ¥2999</sub> | <img src="assets/images/products/lamp.png" width="105"><br><sub>Care Smart Lamp · ¥199</sub> | <img src="assets/images/products/plush.png" width="105"><br><sub>Healing Bear Plush · ¥79</sub> | <img src="assets/images/products/candle.png" width="105"><br><sub>Forest Aroma Candle · ¥69</sub> | <img src="assets/images/products/mug.png" width="105"><br><sub>Handmade Ceramic Mug · ¥49</sub> |
-|---|---|---|---|---|
-
-### 💄 Beauty
-| <img src="assets/images/products/lipstick.png" width="105"><br><sub>Velvet Matte Lipstick · ¥320</sub> | <img src="assets/images/products/cream.png" width="105"><br><sub>Glow Moisturizer Cream · ¥480</sub> | <img src="assets/images/products/nail.png" width="105"><br><sub>Nail Party Polish Set · ¥150</sub> |
-|---|---|---|
-
-### 📚 Books
-| <img src="assets/images/products/novel.png" width="105"><br><sub>Stardust Trilogy · ¥89</sub> | <img src="assets/images/products/watercolor.png" width="105"><br><sub>Watercolor Starter Guide · ¥129</sub> | <img src="assets/images/products/guide.png" width="105"><br><sub>City Wander Guide · ¥59</sub> |
-|---|---|---|
+### 💄 Beauty & Skincare
+| <img src="assets/images/products/centella-cream.png" width="105"><br><sub>Centella Soothing Cream 50ml · ¥159</sub> | <img src="assets/images/products/roundlab-toner.png" width="105"><br><sub>Round Lab 1025 Dokdo Toner 190ml · ¥169</sub> | <img src="assets/images/products/somebymi-foam.png" width="105"><br><sub>Some By Mi 30-Day Miracle Acne Foam · ¥149</sub> | <img src="assets/images/products/mask-set-6.png" width="105"><br><sub>Korean Sheet Mask Set (6 pcs) · ¥89</sub> | <img src="assets/images/products/collagen-mask.png" width="105"><br><sub>Collagen Sheet Mask (6 pcs) · ¥79</sub> | <img src="assets/images/products/joseon-sunscreen.png" width="105"><br><sub>Beauty of Joseon Sunscreen · ¥129</sub> | <img src="assets/images/products/sleep-lip-mask.png" width="105"><br><sub>Overnight Lip Mask 20g · ¥99</sub> | <img src="assets/images/products/medicube-mask.png" width="105"><br><sub>Medicube PDRN Pink Mask 28g · ¥139</sub> | <img src="assets/images/products/laneige-lipmask.png" width="105"><br><sub>Laneige Lip Sleeping Mask (Berry) 20g · ¥169</sub> | <img src="assets/images/products/roundlab-exfoliant.png" width="105"><br><sub>Dokdo 1025 Exfoliating Toner 100ml · ¥179</sub> |
+|---|---|---|---|---|---|---|---|---|---|
 
 ## 🏗️ Architecture
 
@@ -106,9 +98,9 @@ flutter test      # 18 unit tests green (currency/coupons/logistics/catalog)
 
 ## 🎨 Make It Yours
 
-- **Real product photos**: overwrite `assets/images/products/<product-id>.png` with same-name files (square, 600×600+ recommended)
-- **Regenerate illustrations**: edit `tool/assets_src/*.svg` → `bash tool/gen_images.sh` (requires Chrome)
-- **App icon**: edit `tool/assets_src/app_icon.svg` → regenerate → `dart run flutter_launcher_icons`
+- **Your own product photos**: overwrite `assets/images/products/<product-id>.png` with same-name files (square, 600×600+ recommended)
+- **Re-fetch real product images**: edit `tool/fetch_real.sh` and run it (images come from public product pages, for learning/demo only — do not use commercially)
+- **Regenerate banner & app icon**: `bash tool/gen_images.sh` (requires Chrome), then `dart run flutter_launcher_icons`
 
 | Simulated parameter | Where |
 |---|---|
@@ -122,6 +114,7 @@ flutter test      # 18 unit tests green (currency/coupons/logistics/catalog)
 
 ## ❓ FAQ
 
+- **Image credits**: product images come from public product pages such as dopamineshopping.com, for learning/demo purposes only — replace them with your own images for commercial use.
 - **Web version shows a blank page?** Flutter Web must be served over http (opening `file://` won't work) — use `start_web.bat` or any static server.
 - **APK install warning?** An unsigned test build triggers a normal warning; configure signing before publishing to stores.
 - **How to plug in a real backend?** All data access lives in `lib/data/db/database.dart` and `lib/state/providers.dart` — swap them for API calls; the UI stays untouched.

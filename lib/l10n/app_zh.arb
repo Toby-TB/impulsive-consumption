@@ -12,11 +12,29 @@
   "searchEmpty": "没有找到相关商品",
   "outOfStock": "缺货",
   "stockLeft": "库存 {count}",
-  "@stockLeft": {"placeholders": {"count": {"type": "int"}}},
+  "@stockLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "monthlySales": "月销 {count}",
-  "@monthlySales": {"placeholders": {"count": {"type": "int"}}},
+  "@monthlySales": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "ratingStar": "{rating} 分",
-  "@ratingStar": {"placeholders": {"rating": {"type": "double"}}},
+  "@ratingStar": {
+    "placeholders": {
+      "rating": {
+        "type": "double"
+      }
+    }
+  },
   "quantity": "数量",
   "addToCart": "加入购物车",
   "buyNow": "立即购买",
@@ -30,23 +48,53 @@
   "selectAll": "全选",
   "totalLabel": "合计",
   "checkoutN": "结算({count})",
-  "@checkoutN": {"placeholders": {"count": {"type": "int"}}},
+  "@checkoutN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "clearCart": "清空",
   "clearCartConfirm": "确定清空购物车吗？",
   "cartEmpty": "购物车空空的，去逛逛吧",
   "goShopping": "去逛逛",
   "itemsCount": "共 {count} 件商品",
-  "@itemsCount": {"placeholders": {"count": {"type": "int"}}},
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "checkoutTitle": "确认订单",
   "orderItems": "商品清单",
   "couponLabel": "优惠券",
   "couponNone": "不使用优惠券",
   "couponBelowThreshold": "满 {amount} 可用",
-  "@couponBelowThreshold": {"placeholders": {"amount": {"type": "String"}}},
+  "@couponBelowThreshold": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "couponDiscountFixed": "立减 {amount}",
-  "@couponDiscountFixed": {"placeholders": {"amount": {"type": "String"}}},
+  "@couponDiscountFixed": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "couponDiscountPercent": "享 {percent} 折",
-  "@couponDiscountPercent": {"placeholders": {"percent": {"type": "String"}}},
+  "@couponDiscountPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
   "priceBreakdown": "金额明细",
   "subtotalLabel": "商品小计",
   "discountLabel": "优惠",
@@ -54,12 +102,30 @@
   "payNow": "立即支付",
   "insufficientTitle": "余额不足",
   "insufficientMsg": "还差 {amount}，去充值一下？",
-  "@insufficientMsg": {"placeholders": {"amount": {"type": "String"}}},
+  "@insufficientMsg": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "goRecharge": "去充值",
   "paySurpriseDiscount": "惊喜立减 {amount}",
-  "@paySurpriseDiscount": {"placeholders": {"amount": {"type": "String"}}},
+  "@paySurpriseDiscount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "paySurpriseRebate": "惊喜返币 {amount}",
-  "@paySurpriseRebate": {"placeholders": {"amount": {"type": "String"}}},
+  "@paySurpriseRebate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "surpriseBanner": "🎉 今日彩蛋",
   "selectItemsFirst": "请先勾选要结算的商品",
   "paymentSuccess": "支付成功",
@@ -98,19 +164,43 @@
   "signinNow": "立即签到",
   "signedToday": "今日已签到",
   "streakDays": "已连续签到 {count} 天",
-  "@streakDays": {"placeholders": {"count": {"type": "int"}}},
+  "@streakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "signinReward": "获得 {amount} 奖励",
-  "@signinReward": {"placeholders": {"amount": {"type": "String"}}},
+  "@signinReward": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "signinHint": "连续签到奖励递增，7 天一个循环，断签重新开始",
   "dayN": "第 {count} 天",
-  "@dayN": {"placeholders": {"count": {"type": "int"}}},
+  "@dayN": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "favoritesTitle": "收藏夹",
   "emptyFavorites": "还没有收藏的商品",
   "addedToFavorites": "已加入收藏",
   "removedFromFavorites": "已取消收藏",
   "achievementsTitle": "成就徽章",
   "achievementUnlocked": "解锁成就「{name}」",
-  "@achievementUnlocked": {"placeholders": {"name": {"type": "String"}}},
+  "@achievementUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "achFirstOrder": "首单达成",
   "achFirstOrderDesc": "完成第一笔订单",
   "achShopaholic": "剁手大师",
@@ -154,5 +244,7 @@
   "profileSubtitle": "欢迎来到冲动消费，尽情享受购物的快乐吧",
   "dbInitFailed": "本地数据初始化失败",
   "freeShipping": "全场包邮（模拟）",
-  "perItem": "件"
+  "perItem": "件",
+  "heroTitle": "買 一切 · 不心疼",
+  "heroSubtitle": "虛擬餘額 ¥10,000 開局 · 今天不買明天後悔"
 }

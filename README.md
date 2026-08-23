@@ -28,7 +28,7 @@
 
 | 🎮 模块 | 🎯 亮点 |
 |---|---|
-| 🏪 **商品系统** | 28 件手绘插画商品 · 6 大分类 · 搜索 · 详情页 · 月销量/评分/库存拟真字段 · **次日自动补货** |
+| 🏪 **商品系统** | 28 件真实商品 · 6 大分类 · 搜索 · 详情页 · 月销量/评分/库存拟真字段 · **次日自动补货** |
 | 👛 **本地钱包** | 初始余额 ¥10,000 · 模拟充值 · 支付校验扣款 · 收支明细全记录 |
 | 🛒 **购物车** | 勾选部分结算 · 实时总价 · 数量上限=库存 · 一键清空 |
 | 💳 **结算支付** | 4 张优惠券（满减/折扣）· 余额不足引导充值 · **约 30% 概率触发支付彩蛋**（惊喜立减/返币）· 彩带+打勾支付动画 · 事务原子下单 |
@@ -49,31 +49,23 @@
   <img src="docs/images/products.png" alt="商品画廊" width="600"/>
 </p>
 
-## 🖼️ 商品画廊（28 件手绘插画）
+## 🖼️ 商品画廊（28 件真实商品）
 
-### 📱 数码
-| <img src="assets/images/products/phone.png" width="105"><br><sub>星辉 X1 智能手机 · ¥7999</sub> | <img src="assets/images/products/buds.png" width="105"><br><sub>静界 Pro 降噪耳机 · ¥1299</sub> | <img src="assets/images/products/watch.png" width="105"><br><sub>流光 S 智能手表 · ¥1899</sub> | <img src="assets/images/products/laptop.png" width="105"><br><sub>极速 Air 轻薄本 · ¥6599</sub> | <img src="assets/images/products/camera.png" width="105"><br><sub>定格 M2 微单相机 · ¥4599</sub> | <img src="assets/images/products/tablet.png" width="105"><br><sub>幻彩 Nova 平板 · ¥2499</sub> | <img src="assets/images/products/sunglasses.png" width="105"><br><sub>夏日炫光墨镜 · ¥199</sub> |
+### 🖥️ 显卡
+| <img src="assets/images/products/nvidia-rtx-4090.png" width="105"><br><sub>NVIDIA GeForce RTX 4090 24GB 显卡 · ¥12,999</sub> | <img src="assets/images/products/gigabyte-rtx-5090.png" width="105"><br><sub>技嘉 GeForce RTX 5090 Windforce OC 32GB · ¥16,499</sub> | <img src="assets/images/products/asus-rog-strix-4090.png" width="105"><br><sub>华硕 ROG Strix GeForce RTX 4090 24GB · ¥13,499</sub> | <img src="assets/images/products/zotac-rtx-5090.png" width="105"><br><sub>索泰 GeForce RTX 5090 Solid OC 32GB · ¥15,999</sub> | <img src="assets/images/products/msi-gaming-trio-4090.png" width="105"><br><sub>微星 GeForce RTX 4090 Gaming Trio 24GB · ¥12,899</sub> | <img src="assets/images/products/gigabyte-5090-aorus.png" width="105"><br><sub>技嘉 RTX 5090 Aorus Master 32GB · ¥17,999</sub> | <img src="assets/images/products/inno3d-rtx-5090.png" width="105"><br><sub>映众 GeForce RTX 5090 X3 32GB · ¥14,899</sub> |
 |---|---|---|---|---|---|---|
 
-### 👕 服饰
-| <img src="assets/images/products/sneakers.png" width="105"><br><sub>云感缓震跑鞋 · ¥599</sub> | <img src="assets/images/products/tee.png" width="105"><br><sub>纯棉印花 T 恤 · ¥129</sub> | <img src="assets/images/products/coat.png" width="105"><br><sub>暖冬羊毛大衣 · ¥899</sub> | <img src="assets/images/products/cap.png" width="105"><br><sub>街头棒球帽 · ¥89</sub> | <img src="assets/images/products/jeans.png" width="105"><br><sub>复古直筒牛仔裤 · ¥299</sub> |
-|---|---|---|---|---|
+### 🎮 游戏装备
+| <img src="assets/images/products/ps5-slim.png" width="105"><br><sub>PlayStation 5 Slim 数字版 · ¥2,999</sub> | <img src="assets/images/products/stern-pinball.png" width="105"><br><sub>Stern Metallica Pro 弹珠台 · ¥49,999</sub> | <img src="assets/images/products/airhockey-kids.png" width="105"><br><sub>Air Kids 专业气垫球桌 · ¥8,999</sub> | <img src="assets/images/products/airhockey-pro.png" width="105"><br><sub>专业投币式气垫球桌 · ¥13,999</sub> | <img src="assets/images/products/fanatec-gt-extreme.png" width="105"><br><sub>Fanatec GT DD Extreme 方向盘套装 · ¥11,999</sub> | <img src="assets/images/products/fanatec-f1-kit.png" width="105"><br><sub>Fanatec ClubSport F1 方向盘套装 · ¥10,999</sub> | <img src="assets/images/products/simagic-alpha-pro.png" width="105"><br><sub>Simagic Alpha Pro 基座套装 · ¥9,899</sub> | <img src="assets/images/products/darth-vader-statue.png" width="105"><br><sub>达斯·维达 Mythos 1/4 雕像 · ¥10,499</sub> | <img src="assets/images/products/fanatec-dd-plus.png" width="105"><br><sub>Fanatec ClubSport DD+ 基座套装 · ¥9,499</sub> |
+|---|---|---|---|---|---|---|---|---|
 
-### 🍰 食品
-| <img src="assets/images/products/chocolate.png" width="105"><br><sub>丝绒巧克力礼盒 · ¥99</sub> | <img src="assets/images/products/coffee.png" width="105"><br><sub>手冲精品咖啡豆 · ¥128</sub> | <img src="assets/images/products/fruit.png" width="105"><br><sub>阳光鲜果礼篮 · ¥168</sub> | <img src="assets/images/products/ramen.png" width="105"><br><sub>深夜拉面套餐 · ¥59</sub> | <img src="assets/images/products/tea.png" width="105"><br><sub>高山乌龙茶 · ¥218</sub> |
-|---|---|---|---|---|
+### 💻 整机电脑
+| <img src="assets/images/products/pulse-bluepc.png" width="105"><br><sub>Pulse BluePC 游戏主机 i9-14900KF · ¥13,999</sub> | <img src="assets/images/products/aura-workstation.png" width="105"><br><sub>AURA by BluePC 游戏工作站 · ¥17,499</sub> |
+|---|---|
 
-### 🛋️ 家居
-| <img src="assets/images/products/sofa.png" width="105"><br><sub>云朵模块沙发 · ¥2999</sub> | <img src="assets/images/products/lamp.png" width="105"><br><sub>护眼智能台灯 · ¥199</sub> | <img src="assets/images/products/plush.png" width="105"><br><sub>治愈系小熊抱枕 · ¥79</sub> | <img src="assets/images/products/candle.png" width="105"><br><sub>森林香薰蜡烛 · ¥69</sub> | <img src="assets/images/products/mug.png" width="105"><br><sub>手作陶瓷马克杯 · ¥49</sub> |
-|---|---|---|---|---|
-
-### 💄 美妆
-| <img src="assets/images/products/lipstick.png" width="105"><br><sub>丝绒哑光口红 · ¥320</sub> | <img src="assets/images/products/cream.png" width="105"><br><sub>焕颜保湿面霜 · ¥480</sub> | <img src="assets/images/products/nail.png" width="105"><br><sub>指尖派对指甲油套装 · ¥150</sub> |
-|---|---|---|
-
-### 📚 图书
-| <img src="assets/images/products/novel.png" width="105"><br><sub>星尘往事三部曲 · ¥89</sub> | <img src="assets/images/products/watercolor.png" width="105"><br><sub>零基础水彩教程 · ¥129</sub> | <img src="assets/images/products/guide.png" width="105"><br><sub>城市漫游指南 · ¥59</sub> |
-|---|---|---|
+### 💄 美妆护肤
+| <img src="assets/images/products/centella-cream.png" width="105"><br><sub>积雪草保湿面霜 50ml · ¥159</sub> | <img src="assets/images/products/roundlab-toner.png" width="105"><br><sub>Round Lab 1025 Dokdo 化妆水 190ml · ¥169</sub> | <img src="assets/images/products/somebymi-foam.png" width="105"><br><sub>Some By Mi 30 天奇迹祛痘洁面 · ¥149</sub> | <img src="assets/images/products/mask-set-6.png" width="105"><br><sub>韩系面膜套装 6 片 · ¥89</sub> | <img src="assets/images/products/collagen-mask.png" width="105"><br><sub>胶原蛋白面膜 6 片装 · ¥79</sub> | <img src="assets/images/products/joseon-sunscreen.png" width="105"><br><sub>Beauty of Joseon 米水防晒精华 · ¥129</sub> | <img src="assets/images/products/sleep-lip-mask.png" width="105"><br><sub>睡眠唇膜 20g · ¥99</sub> | <img src="assets/images/products/medicube-mask.png" width="105"><br><sub>Medicube PDRN 粉色面膜 28g · ¥139</sub> | <img src="assets/images/products/laneige-lipmask.png" width="105"><br><sub>兰芝唇膜（浆果味）20g · ¥169</sub> | <img src="assets/images/products/roundlab-exfoliant.png" width="105"><br><sub>Dokdo 1025 去角质化妆水 100ml · ¥179</sub> |
+|---|---|---|---|---|---|---|---|---|---|
 
 ## 🏗️ 架构
 
@@ -106,9 +98,9 @@ flutter test      # 18 个单测全绿（汇率/优惠券/物流/目录一致性
 
 ## 🎨 自由定制
 
-- **换成真实商品图**：同名覆盖 `assets/images/products/<商品id>.png` 即可（600×600+ 方形为佳）
-- **重新生成插画**：编辑 `tool/assets_src/*.svg` → `bash tool/gen_images.sh`（需 Chrome）
-- **改应用图标**：编辑 `tool/assets_src/app_icon.svg` → 生成后 `dart run flutter_launcher_icons`
+- **换成自己的商品图**：同名覆盖 `assets/images/products/<商品id>.png` 即可（600×600+ 方形为佳）
+- **重新拉取真实商品图**：编辑 `tool/fetch_real.sh` 后运行（图片来自公开商品页，仅供学习演示，请勿商用）
+- **重新生成横幅与应用图标**：`bash tool/gen_images.sh`（需 Chrome），图标生成后 `dart run flutter_launcher_icons`
 
 | 模拟参数 | 位置 |
 |---|---|
@@ -122,6 +114,7 @@ flutter test      # 18 个单测全绿（汇率/优惠券/物流/目录一致性
 
 ## ❓ 常见问题
 
+- **商品图版权**：商品图片来源于 dopamineshopping.com 等公开商品页面，仅用于学习演示，商用请替换为自己的图片。
 - **Web 版白屏？** Flutter Web 必须通过 http 服务访问（`file://` 打开不行），用 `start_web.bat` 或任意静态服务器。
 - **APK 安装提示风险？** 未签名的测试包属正常提示；上架商店需自行配置签名。
 - **怎么接真实后端？** 数据层集中在 `lib/data/db/database.dart` 与 `lib/state/providers.dart`，替换为 API 调用即可，UI 无需改动。

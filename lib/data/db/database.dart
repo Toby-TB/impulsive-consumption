@@ -104,6 +104,23 @@ class AppDatabase extends _$AppDatabase {
           ));
         }
       }
+      // 清理已下架商品的残留数据（商品目录更新后的自愈）
+      final validIds = products.map((p) => p.id).toSet();
+      for (final row in await select(productStocks).get()) {
+        if (!validIds.contains(row.productId)) {
+          await (delete(productStocks)..where((t) => t.productId.equals(row.productId))).go();
+        }
+      }
+      for (final row in await select(cartItems).get()) {
+        if (!validIds.contains(row.productId)) {
+          await (delete(cartItems)..where((t) => t.id.equals(row.id))).go();
+        }
+      }
+      for (final row in await select(favorites).get()) {
+        if (!validIds.contains(row.productId)) {
+          await (delete(favorites)..where((t) => t.productId.equals(row.productId))).go();
+        }
+      }
     });
   }
 

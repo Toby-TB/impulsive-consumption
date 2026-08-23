@@ -944,6 +944,18 @@ abstract class AppLocalizations {
   /// In zh, this message translates to:
   /// **'件'**
   String get perItem;
+
+  /// No description provided for @heroTitle.
+  ///
+  /// In zh, this message translates to:
+  /// **'買 一切 · 不心疼'**
+  String get heroTitle;
+
+  /// No description provided for @heroSubtitle.
+  ///
+  /// In zh, this message translates to:
+  /// **'虛擬餘額 ¥10,000 開局 · 今天不買明天後悔'**
+  String get heroSubtitle;
 }
 
 class _AppLocalizationsDelegate
