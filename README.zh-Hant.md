@@ -91,6 +91,8 @@ flowchart LR
 | 🍎 macOS / iOS | `flutter build macos --release` / `flutter build ios --release` | 需 macOS + Xcode |
 | 🔧 開發調試 | `flutter run -d chrome` | 熱重載 |
 
+> 🌍 **線上體驗（GitHub Pages）**：https://toby-tb.github.io/impulsive-consumption/ —— 每次 push 到 main 自動建置部署
+
 ```bash
 flutter analyze   # 0 issue
 flutter test      # 18 個單測全綠（匯率/優惠券/物流/目錄一致性）

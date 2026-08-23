@@ -91,6 +91,8 @@ flowchart LR
 | 🍎 macOS / iOS | `flutter build macos --release` / `flutter build ios --release` | Requires macOS + Xcode |
 | 🔧 Dev | `flutter run -d chrome` | Hot reload |
 
+> 🌍 **Live demo (GitHub Pages)**: https://toby-tb.github.io/impulsive-consumption/ —— auto-built & deployed on every push to main
+
 ```bash
 flutter analyze   # 0 issues
 flutter test      # 18 unit tests green (currency/coupons/logistics/catalog)
