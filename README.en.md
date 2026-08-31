@@ -28,7 +28,7 @@ Experience the full shopping spree — browse → cart → coupons → checkout 
 
 | 🎮 Module | 🎯 What you get |
 |---|---|
-| 🏪 **Product system** | 28 real products · 6 categories · search · detail page · simulated monthly sales / rating / stock · **daily auto restock** |
+| 🏪 **Product system** | 60 real products · 6 categories · search · detail page · simulated monthly sales / rating / stock · **daily auto restock** |
 | 👛 **Local wallet** | Initial balance ¥10,000 · simulated top-up · balance check & deduction · full transaction history |
 | 🛒 **Cart** | Partial checkout with checkboxes · real-time total · quantity capped by stock · clear all |
 | 💳 **Checkout & payment** | 4 coupons (fixed-off / percent-off) · insufficient-balance flow to recharge · **~30% chance of a lucky egg** (surprise discount / rebate) · confetti + check-mark animation · atomic order transaction |
@@ -49,7 +49,7 @@ Experience the full shopping spree — browse → cart → coupons → checkout 
   <img src="docs/images/products.png" alt="Product gallery" width="600"/>
 </p>
 
-## 🖼️ Product Gallery (28 real items)
+## 🖼️ Product Gallery (60 real items)
 
 ### 🖥️ Graphics Cards
 | <img src="assets/images/products/nvidia-rtx-4090.png" width="105"><br><sub>NVIDIA GeForce RTX 4090 24GB · ¥12,999</sub> | <img src="assets/images/products/gigabyte-rtx-5090.png" width="105"><br><sub>Gigabyte GeForce RTX 5090 Windforce OC 32GB · ¥16,499</sub> | <img src="assets/images/products/asus-rog-strix-4090.png" width="105"><br><sub>ASUS ROG Strix GeForce RTX 4090 24GB · ¥13,499</sub> | <img src="assets/images/products/zotac-rtx-5090.png" width="105"><br><sub>Zotac GeForce RTX 5090 Solid OC 32GB · ¥15,999</sub> | <img src="assets/images/products/msi-gaming-trio-4090.png" width="105"><br><sub>MSI GeForce RTX 4090 Gaming Trio 24GB · ¥12,899</sub> | <img src="assets/images/products/gigabyte-5090-aorus.png" width="105"><br><sub>Gigabyte RTX 5090 Aorus Master 32GB · ¥17,999</sub> | <img src="assets/images/products/inno3d-rtx-5090.png" width="105"><br><sub>Inno3D GeForce RTX 5090 X3 32GB · ¥14,899</sub> |

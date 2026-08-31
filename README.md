@@ -28,7 +28,7 @@
 
 | 🎮 模块 | 🎯 亮点 |
 |---|---|
-| 🏪 **商品系统** | 28 件真实商品 · 6 大分类 · 搜索 · 详情页 · 月销量/评分/库存拟真字段 · **次日自动补货** |
+| 🏪 **商品系统** | 60 件真实商品 · 6 大分类 · 搜索 · 详情页 · 月销量/评分/库存拟真字段 · **次日自动补货** |
 | 👛 **本地钱包** | 初始余额 ¥10,000 · 模拟充值 · 支付校验扣款 · 收支明细全记录 |
 | 🛒 **购物车** | 勾选部分结算 · 实时总价 · 数量上限=库存 · 一键清空 |
 | 💳 **结算支付** | 4 张优惠券（满减/折扣）· 余额不足引导充值 · **约 30% 概率触发支付彩蛋**（惊喜立减/返币）· 彩带+打勾支付动画 · 事务原子下单 |
@@ -49,7 +49,7 @@
   <img src="docs/images/products.png" alt="商品画廊" width="600"/>
 </p>
 
-## 🖼️ 商品画廊（28 件真实商品）
+## 🖼️ 商品画廊（60 件真实商品）
 
 ### 🖥️ 显卡
 | <img src="assets/images/products/nvidia-rtx-4090.png" width="105"><br><sub>NVIDIA GeForce RTX 4090 24GB 显卡 · ¥12,999</sub> | <img src="assets/images/products/gigabyte-rtx-5090.png" width="105"><br><sub>技嘉 GeForce RTX 5090 Windforce OC 32GB · ¥16,499</sub> | <img src="assets/images/products/asus-rog-strix-4090.png" width="105"><br><sub>华硕 ROG Strix GeForce RTX 4090 24GB · ¥13,499</sub> | <img src="assets/images/products/zotac-rtx-5090.png" width="105"><br><sub>索泰 GeForce RTX 5090 Solid OC 32GB · ¥15,999</sub> | <img src="assets/images/products/msi-gaming-trio-4090.png" width="105"><br><sub>微星 GeForce RTX 4090 Gaming Trio 24GB · ¥12,899</sub> | <img src="assets/images/products/gigabyte-5090-aorus.png" width="105"><br><sub>技嘉 RTX 5090 Aorus Master 32GB · ¥17,999</sub> | <img src="assets/images/products/inno3d-rtx-5090.png" width="105"><br><sub>映众 GeForce RTX 5090 X3 32GB · ¥14,899</sub> |
