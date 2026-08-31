@@ -46,3 +46,12 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Node/npm 依赖（勿入库）
+node_modules/
+
+# 图像处理/切图临时产物
+tool/cells/
+
+# 下载的商品原始图（可由 fetch 脚本重拉）
+tool/real_src/*.raw
